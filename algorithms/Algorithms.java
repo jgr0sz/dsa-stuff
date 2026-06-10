@@ -31,7 +31,7 @@ public class Algorithms {
     public static <T extends Comparable<T>> int BinarySearch(T[] arr, T target) {
         int highIndex = arr.length;
         int lowIndex = 0;
-        
+
         //Loop runs until there are no more elements to check
         while (lowIndex <= highIndex) {
             int midIndex = (int) Math.floor((highIndex + lowIndex)/2);
