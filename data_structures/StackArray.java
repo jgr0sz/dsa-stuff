@@ -41,11 +41,14 @@ public class StackArray<T> {
 
     //Method that removes a value from the top of the stack array and returns it.
     public T pop() {
-        //Store the top in a value, nullify the current top, and decrement the size and topIdx.
-        T value = this.arr[this.topIdx];
-        this.arr[this.topIdx] = null;
-        topIdx--;
-        size--;
+        T value = null;
+        //empty array check
+        if (this.topIdx > -1) {
+            value = this.arr[this.topIdx];
+            this.arr[this.topIdx] = null;
+            topIdx--;
+            size--;
+        }
         return value;
     }
 
