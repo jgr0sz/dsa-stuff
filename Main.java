@@ -20,6 +20,13 @@ public class Main {
         linkedList.insert(linkedList.getHead(), 0, 18);
         linkedList.append(45);
         linkedList.delete(linkedList.getHead(), 1);
-        System.out.printf("Linked list:\n%s\n", linkedList.toString());
+        System.out.printf("Linked list:\n%s\n\n", linkedList.toString());
+
+        //StackArray operations
+        StackArray<Integer> stackArray = new StackArray<>();
+        stackArray.push(12);
+        stackArray.push(16);
+        System.out.printf("Stack array:\n%s\nPopped value (top): %d\n\n", 
+        stackArray.toString(), stackArray.pop());
     }
 }
