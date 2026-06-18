@@ -9,6 +9,11 @@ public class LinkedList<T> {
         return this.head;
     }
 
+    //Simple setter to modify the head variable in linked list stacks.
+    public void setHead(Node<T> node) {
+        this.head = node;
+    }
+
     //Simple O(n) operation adding a new node to the end of a linked list, or as the head if no nodes present.
     public void append(T data) {
         Node<T> newNode = new Node<>(data);

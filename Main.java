@@ -28,5 +28,12 @@ public class Main {
         stackArray.push(16);
         System.out.printf("Stack array:\n%s\nPopped value (top): %d\n\n", 
         stackArray.toString(), stackArray.pop());
+
+        //StackLinkedList operations
+        StackLinkedList<String> linkedstack = new StackLinkedList<>();
+        linkedstack.push("Foo");
+        linkedstack.push("Bar");
+        System.out.printf("Stack linked list:\n%s\nPopped value (top): %s\n\n", 
+        linkedstack.getList().toString(), linkedstack.pop());
     }
 }
